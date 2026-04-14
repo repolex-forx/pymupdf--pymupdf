@@ -1,0 +1,31 @@
+[2026-04-14T16:48:15Z] === ENRICH ITERATION 1 START | repo=pymupdf/pymupdf sha=167ee108 ===
+[2026-04-14T16:48:15Z] [iter=1] PHASE START: enrich repo=pymupdf/pymupdf sha=167ee108 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/167ee108-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/167ee108eb85c71671890afd9a724a2b867c0e17.nq.gz
+[2026-04-14T16:48:15Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-14T16:48:25Z] [iter=1] AST store loaded triples=1339277 load_secs=10 mem_mb=855 MB
+[2026-04-14T16:48:25Z] [iter=1] Step 2: Finding LSP targets mem_mb=855 MB
+[2026-04-14T16:48:27Z] [iter=1] LSP targets found call_sites=9514 imports=156 extends=18 implements=0 secs=1
+[2026-04-14T16:48:28Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=855 MB
+[2026-04-14T16:48:35Z] [iter=1] Position index built positions=88753 nodes_with_types=109812 secs=7 mem_mb=855 MB
+[2026-04-14T16:48:35Z] [iter=1] Step 3: Starting LSP resolution mem_mb=855 MB already_completed_types=[] already_completed_files=0
+[2026-04-14T16:48:35Z] [iter=1] Resolving target type target_type=call_site count=9514
+[2026-04-14T16:50:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.5 files_done=1 resolved=410 errors=229 current=fitz/fitz.py
+[2026-04-14T16:54:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=2 resolved=587 errors=657 current=examples/PDFjoiner.py
+[2026-04-14T16:55:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.4 files_done=3 resolved=623 errors=777 current=examples/shapes_and_symbols.py
+[2026-04-14T16:56:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.5 files_done=4 resolved=665 errors=901 current=demo/sierpinski.py
+[2026-04-14T16:58:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.1 files_done=6 resolved=701 errors=1078 current=examples/PDFoutline.py
+[2026-04-14T17:00:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.6 files_done=7 resolved=778 errors=1354 current=demo/text2pdf.py
+[2026-04-14T17:04:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.0 files_done=9 resolved=854 errors=1726 current=demo/demo.py
+[2026-04-14T17:05:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.0 files_done=12 resolved=966 errors=1837 current=examples/PDF2TextJS.py
+[2026-04-14T17:05:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.6 files_done=19 resolved=1059 errors=1903 current=demo/splitter.py
+[2026-04-14T17:06:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.2 files_done=28 resolved=1147 errors=1965 current=examples/draw-pencil.py
+[2026-04-14T17:06:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.7 files_done=36 resolved=1250 errors=2025 current=demo/pixmap.py
+[2026-04-14T17:07:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.3 files_done=44 resolved=1345 errors=2084 current=examples/embedded-copy.py
+[2026-04-14T17:33:47Z] [iter=1] Target type resolved target_type=call_site resolved=1458 errors=5036 secs=2712 mem_mb=855 MB
+[2026-04-14T17:33:47Z] [iter=1] Resolving target type target_type=import_statement count=156
+[2026-04-14T17:33:47Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=45.5 files_done=0 resolved=0 errors=0 current=demo/demo_lowlevel.py
+[2026-04-14T17:33:49Z] [iter=1] Target type resolved target_type=import_statement resolved=145 errors=0 secs=2 mem_mb=855 MB
+[2026-04-14T17:33:49Z] [iter=1] Resolving target type target_type=extends_clause count=18
+[2026-04-14T17:33:51Z] [iter=1] Target type resolved target_type=extends_clause resolved=18 errors=0 secs=1 mem_mb=855 MB
+[2026-04-14T17:33:54Z] [iter=1] Step 5: Writing final enrichment file triples=50668
+[2026-04-14T17:33:55Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/167ee108eb85c71671890afd9a724a2b867c0e17.nq.gz size_kb=899
+[2026-04-14T17:33:55Z] [iter=1] PHASE END: enrich elapsed_s=2740 elapsed_min=45.7 total_triples=50668
